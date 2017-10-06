@@ -1,0 +1,24 @@
+To install tensorflow and tensorboard in anaconda following steps are executed(be connected to interent for this as may be you can get updated version) 
+after installing and running anaconda open "Anaconda Navigator"
+click Environmant in extreme left and then on down click the + box, in the pop up small window write "what ever name you like to give to this environmanr, for ex:"tensorflow or tiger or lion what ever"
+select python 3.6 frrom packages drop down box,then click create
+now from the rightside select all from first drop down box, and write tensorflow in search box and click enter, select tensorflow(not tensorflow gpu or r-tensorflow)
+last click apply((green button on right hand bottom)
+It will take some time(around 5-6  minutes)
+now if it's done, then click home again and click launch Jupyter(it will also take 2 minutes approx.) and a new window will open automatically in your web browser with an address"http://localhost:8888/tree#"
+here click new button select python as kernel and a new window will open again, so you are set to go
+
+For Tensorflow go to your windows button click Anaconda3 and from there click Anaconda prompt,
+in Anaconda prompt write activate tensorflow       and click enter.
+your promt will change to "(tensorflow) C:\Users\xyz\pp>"
+now write pip install --ignore-installed --upgrade tensorflow    (((( just for case to get the latest verstion))))
+in your jupyter notebook write a small programme 
+import tensorflow as tf  (shift enter)
+a=tf.constant(5)
+b=tf.constant(6)
+c=a*b                    (shift enter)
+sess=tf.Session()        (shift enter)
+File_Writer=tf.summary.FileWriter('C:\\Users\\Neeraj\\AnacondaProjects\\tf\\graph' , sess.graph)     (shift enter)** here my directory was C:\\Users\\Neeraj\\AnacondaProjects\\tf\\graph  please you can write your directory name, it's simple.
+now write tensorboard --logdir=C:\Users\XXX\AnacondaProjects\YY\ZZ    (( you  need to  write your directory name here))
+press enter and then when the system executes this code open http://grey:6006/#graphs in your browser and tensorboard is working.
+Thankyou
