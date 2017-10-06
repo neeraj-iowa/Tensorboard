@@ -18,6 +18,7 @@ a=tf.constant(5)
 b=tf.constant(6)
 c=a*b                    (shift enter)
 sess=tf.Session()        (shift enter)
+again come back to your command prompt and write the code below
 File_Writer=tf.summary.FileWriter('C:\\Users\\Neeraj\\AnacondaProjects\\tf\\graph' , sess.graph)     (shift enter)** here my directory was C:\\Users\\Neeraj\\AnacondaProjects\\tf\\graph  please you can write your directory name, it's simple.
 now write tensorboard --logdir=C:\Users\XXX\AnacondaProjects\YY\ZZ    (( you  need to  write your directory name here))
 press enter and then when the system executes this code open http://grey:6006/#graphs in your browser and tensorboard is working.
